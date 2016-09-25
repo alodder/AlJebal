@@ -1,0 +1,139 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+	min-width:47em;
+	background-color:#E2D3C3;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*
+Header
+*/
+#header {
+	margin:0;
+	padding:0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background:url(images/tr.png) no-repeat;
+	background-position:50px 25px;
+	background-color:#FFF;
+	color:#000;
+	}
+	
+
+#header h1 {
+	margin:0;
+	margin-left:3em;
+	padding-top:1em;
+	}
+#header address{
+	display:inline-block;
+	padding:1em;
+	float:right;
+	clear:left;
+	}
+#header #navbar 
+{
+    width:100%;
+	margin:0;
+	clear:both;
+	font-size:1.8em;
+	background:url(images/navbar.png);
+	border-bottom:1px solid #666;
+	}
+#header #navbar ul {
+	margin:0;
+	clear:both;
+}
+#header #navbar li{
+	margin-left:1em;
+	padding-left:1em;
+	display:inline-block;
+	color:#fff;
+}
+#header #navbar a {
+	text-decoration:none;
+	color:#fff;
+}
+#header #navbar a:hover {
+	color:#000;
+}
+
+/*main*/
+#main {
+	padding:1em;
+	border-top:1px solid #ccc;
+}
+
+/*
+Menus
+*/
+#main #menus{
+	float:left;
+	clear:left;
+	/*border:1px dashed #00F;*/
+	}
+#main #menus hr{
+	border-top:1px dotted;}
+#main .menuitem {
+	display:inline-block;
+	/*border:1px solid #F0C;*/
+	clear:left;
+}
+#main .menuitem:hover {
+	background-color:#fff;
+}
+#main .menuitem img{
+	float:left;
+}
+#main .menuitem div{
+	padding:1em;
+	float:left;
+	max-width:20em;
+}
+
+.scrollpage
+{
+    float:none;
+    margin:0 auto;
+    width:60em;
+    height:20em;
+}
+.scrollpage h1{ text-align:left;}
+
+.scrollpage img{ float:right;}
+
+.scrollpage p
+{
+    width:20em;
+}
+
+.lap
+{
+    color:#7E5F7A
+}
+/*
+Order
+*/
+#main #order
+{
+    position:fixed;
+    right:0;
+	float:right;
+	clear:left;
+	margin:1em;
+	padding:1em;
+	background-color:#fff;
+	border:4px double #CCC;
+}
+
+/*Footer*/
+#footer {
+	float:none;
+	clear:both;
+	font-size:.8em;
+	color:#666;
+	border-top:#CCC 1px solid;
+}

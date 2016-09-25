@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+    <link href="~/App_Themes/Theme1/StyleSheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div id="header">
+    	<address>
+        	2240 SW 3rd Street<br />
+            Corvallis, OR 97333<br />
+            (541)-207-3478<br />
+        </address>
+        
+    	<address>
+        	<br />
+            11am - 9pm<br />
+            7 days a week
+        </address>
+        <address>
+        <div id="fb-root"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/AlJebal/174829069228831" width="292" show_faces="false" stream="false" header="false"></fb:like-box></div>
+        </address>
+
+         <asp:Menu ID="navbar" runat="server" DataSourceID="SiteMapDataSource1" 
+                StaticDisplayLevels="2" RenderingMode="List" EnableTheming="False" 
+             IncludeStyleBlock="False">
+         </asp:Menu>
+         <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+             StartingNodeUrl="~/Default.aspx" />
+    </div>
+    <div>
+        <div id="main">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+    <div id="footer"><ul>
+        <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/contactUs.aspx">Contact Us</asp:HyperLink></li>
+        <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/contactUs.aspx">About AlJebal</asp:HyperLink></li>
+        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SiteNav.aspx">Site Map</asp:HyperLink></li>
+        <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ChangThem.aspx">Site Options</asp:HyperLink></li>
+    </ul>
+    <ul>
+        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/devTeam.aspx">Developed by Class Software</asp:HyperLink></li>
+    </ul>&copy; Al-Jebal</div>
+</body>
+</html>

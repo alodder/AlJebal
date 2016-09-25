@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="manage_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="~/App_Themes/Manager/StyleSheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header">
+            <div id="navbar">
+                <asp:Menu ID="menu" runat="server" DataSourceID="ManageSiteMapData" 
+                    StaticDisplayLevels="2" RenderingMode="List" Enabled="True" Width="100%" StaticMenuItemStyle-Width="100%" EnableTheming="False" IncludeStyleBlock="False" Orientation="Horizontal" StaticMenuStyle-Width="100%" DynamicMenuStyle-BackColor="#66FF33">
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="ManageSiteMapData" runat="server" 
+                    StartingNodeUrl="~/manage/Default.aspx" />
+            </div>
+            <div id="subMenu">
+                <asp:ContentPlaceHolder id="subMenuPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+                <div id="sessionMenu">
+                    Welcome, User
+                    |
+                    <asp:HyperLink ID="HyperLink1" runat="server">Logout</asp:HyperLink>
+                </div> 
+            </div>
+                
+        </div>
+        <div id="main">
+            <asp:ContentPlaceHolder id="sideMenuPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="footer">
+            Free Icon Set: <a href="http://wefunction.com/2008/07/function-free-icon-set">http://wefunction.com/2008/07/function-free-icon-set</a>
+            <asp:ContentPlaceHolder id="footerPlaceHolder" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

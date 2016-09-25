@@ -1,0 +1,49 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Button  runat="server" 
+    BackColor="#E49A68" 
+    BorderColor="#E46E20" 
+    Font-Bold="True" 
+    Font-Overline="True" 
+    Font-Underline="True" 
+    ForeColor="White" 
+    Text="Button" />
+
+ <asp:DropDownList  runat="server" 
+ BackColor="#BDCBED" 
+ Font-Italic="True" 
+ Font-Size="Medium" 
+ Font-Strikeout="False">
+ </asp:DropDownList>
+
+ <asp:Label  runat="server" BorderStyle="Dotted" BorderWidth="3px" 
+  CssClass="lap" Font-Names="Modern No. 20" ></asp:Label>
+
+  <asp:CheckBoxList  runat="server" BorderStyle="Dotted" 
+                    BorderWidth="3px" CssClass="lap" Font-Names="Modern No. 20" Font-Size="Medium">
+                </asp:CheckBoxList>
+
+                <asp:RadioButtonList  runat="server" BorderStyle="Dashed" 
+                    BorderWidth="2px" Font-Italic="False" Font-Names="Modern No. 20" 
+                    Font-Overline="True" Font-Size="Medium">
+                </asp:RadioButtonList>
+
+<asp:HyperLink  runat="server" Font-Bold="True" 
+                    Font-Names="BrowalliaUPC">HyperLink</asp:HyperLink>
+
+<asp:TextBox  runat="server" BackColor="#F1E7E7"></asp:TextBox>
+

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default2.aspx" title="root"  description="idknowwhwat to root">
+    <siteMapNode url="~/manage/Default.aspx" title="Portal"  description="Manager Portal">
+      <siteMapNode url="~/manage/orders.aspx" title="Orders"  description="View and manage orders">
+        <siteMapNode url="~/manage/newOrders.aspx" title="New Orders"  description="View New Orders" />
+        <siteMapNode url="~/manage/orderReport.aspx" title="Order Report"  description="View order report" />
+        <siteMapNode url="~/manage/orderedItemsReport.aspx" title="Ordered Items Report"  description="View order report" />
+        <siteMapNode url="~/manage/customerReport.aspx" title="Customer Report" description ="Customer Information"/>
+      </siteMapNode>
+      <!--Reservations-->
+      <siteMapNode url="~/manage/reservations.aspx" title="Reservations"  description="In this page you can View the table reservation , delete and edit">
+        <siteMapNode url="~/manage/RVdeaitalview.aspx" title="Reservation Details"  description="View the reservation in details" />
+        <siteMapNode url="~/manage/makenewRV.aspx" title="New Reservation"  description="Here you can make new reservation for new coustomer" />
+        <siteMapNode url="~/manage/searchE.aspx" title="search for Reservation"  description="Here you can look for current reservation" />
+        <siteMapNode url="~/manage/tablereport.aspx" title="Table Reservation Report"  description="Here you can look for table report" />
+
+      </siteMapNode>
+      <siteMapNode url="~/manage/feedback.aspx" title="Feedback"  description="Review and reply to Customer Feedback" >
+        <siteMapNode url="~/manage/FBrespotr.aspx" title="Feedback report"  description="" />
+      </siteMapNode>
+        <siteMapNode url="~/manage/menuitems.aspx" title="Menu"  description="Manage Menus and Menu Items">
+        <siteMapNode url="~/manage/createMenuItem.aspx" title="New Dish"  description="" />
+        <siteMapNode url="~/manage/newMenu.aspx" title="New Menu"  description="" />
+        <siteMapNode url="~/manage/manageMenu.aspx" title="Manage Menus"  description="" />
+        <siteMapNode url="~/manage/MenuReport.aspx" title="Menu Items report"  description="" />
+      </siteMapNode>
+      <siteMapNode url="~/manage/ViewAndEditCustom.aspx" title="Custom orders"  description="" >
+        <siteMapNode url="~/manage/customReport.aspx" title="Custom order report"  description="" />
+    </siteMapNode>
+		  
+		  <siteMapNode url="~/manage/announcements.aspx" title="Announcements"  description="" />
+      <siteMapNode url="" title="Users"  description="" />
+      </siteMapNode>
+    
+    <siteMapNode url="Default.aspx" title="News"  description="Customer Portal">
+      <siteMapNode url="menu.aspx" title="Menu"  description="Order from the menu" />
+		  <siteMapNode url="MakeReservationForNewC.aspx" title="Reservation"  description="Here you can make table reservation"/>
+      <siteMapNode url="custom_order.aspx" title="Custom Order"  description="here you can make custom dish"/>
+      <siteMapNode url="feedback.aspx" title="Feedback"  description="12" />
+	  <siteMapNode url="survay.aspx" title="Survey"  description="survey about you and you what kind of food you like"/>	
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
